@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<input type="checkbox" checked="checked" value="java" />Java
+		<input type="checkbox" checked="checked" value="c" />c
+		<input type="checkbox"  />js
+		<input type="checkbox" />css
+		
+	</body>
+</html>
+
+<script type="text/javascript" src="../../js/jquery/jquery.js" ></script>
+
+<script>
+	
+	$(function(){
+		console.log($("input[type=checkbox]:checked:nth-child(2)").val())
+	})
+	
+	
+</script>

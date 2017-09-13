@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<div id="d">Hello JQuery.  锋利的 JQuery</div>
+		
+	</body>
+</html>
+
+<script type="text/javascript" src="../../js/jquery/jquery.js" ></script>
+
+<script>
+	
+	$(function(){
+//		console.info($('#d').html())
+
+		var d1 = document.getElementById("d");
+		
+		var d2 = $("#d")
+		
+		var d3 = $(d1)
+		
+		console.info(d2.get(0)) 
+
+		console.log(d3)
+	})
+	
+</script>
