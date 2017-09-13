@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+
+		<ul>
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+			<li>D</li>
+			<li>E</li>
+			<li>F</li>
+			<li>G</li>
+			<li>H</li>
+			<li>I</li>
+			<li>J</li>
+		</ul>
+	</body>
+
+</html>
+<script type="text/javascript" src="../../js/jquery/jquery.js"></script>
+<script>
+	$(function() {
+
+		//		$("ul li").each(function( n , e  ){
+		//			console.log( n + " : " + $(e).html() )
+		//		})
+
+		$("ul li").each(function( n , e) {
+			$(e).html(function(e){
+				var data = new Date()
+				if()
+				return "时间: " + data.toISOString() + " - "+ $(this).html()
+			})
+		})
+
+	})
+</script>

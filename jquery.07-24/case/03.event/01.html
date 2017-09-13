@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<input id="btn" value="button" type="button" />
+		<input id="one" value="one" type="button" />
+		<input id="btn2" value="btn2" type="button" />
+		<input id="off" value="off-btn2" type="button" />
+		
+		<input id="btn3" value="好多事件" type="button" />
+		
+	</body>
+</html>
+
+<script type="text/javascript" src="../../js/jquery/jquery.js" ></script>
+<script>
+	
+	$(function(){
+		
+		$("#btn").click(function(){
+			alert("")
+		})
+		$("#one").one('click' , function(){
+			alert("1")
+		})
+		
+		$("#btn2").click(function(){
+			alert("....")
+		})
+		
+		$("#off").click(function(){
+			$("#btn2").off('click')
+		})
+		
+		$("#btn3").on({
+			'click' : function(){
+				alert("---")
+			}, 
+			'mouseover' : function(){
+				alert("****")
+			}
+		})
+
+	})
+	
+</script>
