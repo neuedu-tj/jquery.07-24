@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<style>
+			
+			#wrap {
+				height: 300px;
+				width: 500px;
+				background-color: whitesmoke;
+				
+				display: flex;
+				
+				flex-flow: row nowrap; 
+				justify-content: space-around;
+				align-items: flex-end;
+			}
+			
+			#wrap div{
+				padding: 10px;
+				margin: 10px;
+				border: 5px solid blue;
+			}
+			
+		</style>
+		
+	</head>
+
+	<body>
+
+		<div id="wrap">
+
+			<div id="a"></div>
+			<div id="b"></div>
+			<div id="c"></div>
+			<div id="d"></div>
+			<div id="e"></div>
+
+		</div>
+
+	</body>
+
+</html>
+<script type="text/javascript" src="../../js/jquery/jquery.js"></script>
+<script>
+	
+	$(function(){
+		
+		$("#wrap div").each(function(){
+			$(this).height(200)
+			$(this).width(20)
+			$(this).css("background-color" , "red")
+		})
+		
+		
+		console.log($("#wrap div:nth-child(1)").outerHeight(true))
+	})
+	
+</script>
